@@ -8,20 +8,36 @@
   height: 50px;
 }
 
-.navbar__mobile {
+.nav__mobile {
   display: block;
 }
 
-.navbar__desk {
+.nav__mobile .nav__mobile--title {
+  color: white;
+  text-decoration: none;
+}
+
+.desk__nav {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .navbar__mobile {
+  .nav__mobile {
     display: none;
   }
-  .navbar__desk {
-    display: block;
+  .desk__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: black;
+  }
+  .desk__nav .desk__nav--logo {
+    background-image: url(/assets/logo.svg);
+    width: 80px;
+    height: 80px;
+  }
+  .desk__nav .nav-link {
+    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */
